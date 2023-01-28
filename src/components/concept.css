@@ -1,0 +1,78 @@
+/* banner 1 */
+#banner1 {
+    background: url(/src/images/banner1.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+.banner-box span {
+    color: hsl(344deg 0% 46%) 30%;
+    font-size: 15.5px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner1 {
+    width: 100%;
+}
+
+.wb_hr {
+    background-image: linear-gradient(270deg,
+            hsl(0deg 0% 19%) 0%,
+            hsl(344deg 0% 28%) 11%,
+            hsl(344deg 0% 37%) 21%,
+            hsl(344deg 0% 46%) 30%,
+            hsl(344deg 0% 55%) 39%,
+            hsl(344deg 0% 61%) 48%,
+            hsl(344deg 0% 68%) 57%,
+            hsl(344deg 0% 74%) 65%,
+            hsl(344deg 0% 81%) 74%,
+            hsl(344deg 0% 87%) 83%,
+            hsl(344deg 0% 93%) 91%,
+            hsl(0deg 0% 100%) 100%);
+    height: 12px;
+}
+
+.bw_hr {
+    background-image: linear-gradient(270deg,
+            hsl(0deg 0% 100%) 0%,
+            hsl(0deg 0% 83%) 17%,
+            hsl(0deg 0% 67%) 33%,
+            hsl(0deg 0% 50%) 50%,
+            hsl(0deg 0% 33%) 67%,
+            hsl(0deg 0% 17%) 83%,
+            hsl(0deg 0% 0%) 100%);
+    height: 12px;
+}
+
+.learn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transform: 0.2s;
+    margin-top: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.learn:hover {
+    background-color: #0be4d1;
+    color: #fff;
+}

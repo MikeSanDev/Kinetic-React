@@ -1,8 +1,11 @@
-import React from 'react'
-import './NavbarComponent.css';
+import React, { useState } from 'react'
+import './navbarComponent.css';
 import logo from '../images/logo.png';
 
-function NavbarComponent() {
+const NavbarComponent = () => {
+    // mobile navbar toggle
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <>
             <div className='nav-main'>
@@ -11,11 +14,12 @@ function NavbarComponent() {
                     <img src={logo} alt="logo" className='logo' />
                     <a href='/landing' className='nav-title'>Kinetic Footwear</a>
                 </div>
-                <div className='nav-items'>
-                    <a href="/home/">Home</a>
+                <div className={`nav-items ${isOpen && "open"} `}>
+                    <a href="/">Home</a>
                     <a href="/about">About</a>
                 </div>
-                <div className='nav-toggle'>
+                <div className={`nav-toggle ${isOpen && "open"} `}
+                    onClick={() => setIsOpen(!isOpen)}>
                     <div className='bar'></div>
                 </div>
             </div>

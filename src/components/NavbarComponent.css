@@ -67,6 +67,16 @@
         left: 0;
         width: 100%;
         height: 100%;
+        transform: translateX(-100%);
+        transition: all .45s;
+    }
+
+    .nav-items>a::before {
+        background: transparent;
+    }
+
+    .nav-items.open {
+        transform: translateX(0);
     }
 
     .nav-toggle {
@@ -103,7 +113,22 @@
     }
 
     .nav-toggle>.bar::after {
-        transform: translateY(8px);
         width: 32px;
+        transform: translateY(8px);
+    }
+
+    .nav-toggle.open>.bar {
+        transform: translateX(-40px);
+        background: transparent;
+
+    }
+
+    .nav-toggle.open>.bar::before {
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+    }
+
+    .nav-toggle.open>.bar::after {
+        transform: rotate(-45deg) translate(26px, 26px);
     }
 }
