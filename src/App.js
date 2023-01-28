@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NavbarComponent from './components/NavbarComponent';
 import Home from './pages/Home';
 import About from './pages/About';
 import './App.css';
@@ -7,14 +8,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="About" element={<About />} />
-          </Routes>
-        </BrowserRouter>
-      </header>
+      <NavbarComponent />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          {/* <Route path="Landing" element={<Landing />} /> */}
+          <Route path="About" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
