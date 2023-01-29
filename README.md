@@ -1,4 +1,4 @@
-# Kinetic Footwear (React Version
+# Kinetic Footwear (React Version) (in progress)
 
 Built a test e-commerce site for a startup company that sells a usb/charge-able sneaker with every step
 -currently a concept site to show investors. A survey was implemented in order to get quantifiable data to show an interest for this product.
