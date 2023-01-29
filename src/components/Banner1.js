@@ -1,6 +1,7 @@
 import React from 'react'
-import './concept.css'
-function Concept() {
+import './banner1.css'
+
+function Banner1() {
     return (
         <>
             <div id='banner1'>
@@ -19,4 +20,4 @@ function Concept() {
     )
 }
 
-export default Concept
+export default Banner1
