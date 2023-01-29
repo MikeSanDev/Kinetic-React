@@ -13,7 +13,7 @@ const NavbarComponent = () => {
     return (
         <header>
             <div className='nav-main'>
-                <div className='nav-logo' >
+                <div className='nav-logo'>
                     {/* add href to landing page on logo */}
                     <img src={logo} alt="logo" className='logo' />
                     <a href='/landing' className='nav-title'>Kinetic Footwear</a>
