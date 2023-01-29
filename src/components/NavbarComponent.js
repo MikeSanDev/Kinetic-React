@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 import React, { useState } from 'react'
-=======
-import React, { useRef } from 'react'
-import { FaBars, FaTimes } from "react-icons/fa";
->>>>>>> origin/test-branch
 import './NavbarComponent.css';
 import logo from '../images/logo.png';
 
