@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Concept from '../components/Concept'
+import Banner1 from '../components/Banner1';
+import Banner2 from '../components/Banner2';
 
 function Home() {
     return (
@@ -27,7 +28,9 @@ function Home() {
                 </Form>
             </div>
             <hr class="hero-hr" />
-            <Concept />
+            <Banner1 />
+            <Banner2 />
+            <hr class="bw_hr" />
         </>
     )
 }

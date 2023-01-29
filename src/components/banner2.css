@@ -1,0 +1,124 @@
+#banner2 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(45deg,
+            hsl(0deg 0% 100%) 0%,
+            hsl(0deg 0% 83%) 2%,
+            hsl(0deg 0% 67%) 8%,
+            hsl(0deg 0% 50%) 16%,
+            hsl(0deg 0% 33%) 28%,
+            hsl(0deg 0% 17%) 47%,
+            hsl(0deg 0% 0%) 100%);
+}
+
+#banner2 .index_about {
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 50px;
+
+}
+
+#banner2 img {
+    width: 500px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+#banner2 h1 {
+    color: #fff;
+    font-size: 40px;
+
+}
+
+
+#banner2 p {
+    color: #fff;
+    font-size: 17px;
+    padding: 20px 0;
+}
+
+#banner2 span {
+    color: #6cc4a1;
+}
+
+#banner2 .banner--emoji {
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 2;
+}
+
+.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 30px;
+    color: #000;
+    background-color: rgb(255 205 46);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transform: 0.2s;
+    text-decoration: none;
+}
+
+.learn-text {
+    text-decoration: none;
+    color: #000;
+}
+
+button:hover {
+    background-color: #4d998f;
+    color: #fff;
+}
+
+/* Responsive */
+
+@media (min-width: 300px) and (max-width: 700px) {
+    #banner2 {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #banner2 .index_about {
+        width: 100%;
+        margin: 25px;
+        padding: 0px 25px;
+    }
+
+    #banner2 img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        margin: 30px 0 10px 0px;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+
+
+    #banner2 {
+        height: 110vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #banner2 .index_about {
+        margin: 0;
+        padding: 0px 135px;
+        width: auto;
+    }
+
+    #banner2 img {
+        margin: 0px 20px;
+    }
+}
