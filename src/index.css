@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Eczar&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Eczar', serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 
@@ -41,4 +41,74 @@ body {
       hsl(64deg 100% 48%) 81%,
       hsl(122deg 100% 50%) 100%);
   height: 12px;
+}
+
+
+#hero h1 {
+  margin-top: 10px;
+  color: #f9f2ed;
+  font-size: 70px;
+}
+
+#hero p {
+  color: #eee;
+  font-size: 20px;
+}
+
+#hero .hero-text {
+  margin-bottom: 18px;
+}
+
+#hero .news-text {
+  margin-bottom: 20px;
+}
+
+#hero .email_form {
+  margin-right: 5px;
+}
+
+#hero input {
+  height: 2.75rem;
+  padding: 0 1.25rem;
+  font-size: 14px;
+  width: 350px;
+  color: #eee;
+  background-color: #606063;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 1.2em;
+  color: mintcream;
+  padding: 5px;
+}
+
+#hero button {
+  color: #606063;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #444444;
+  background-color: #8cc0de;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transform: 0.2s;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#hero button:hover {
+  background-color: #444444;
+  color: #eee;
 }

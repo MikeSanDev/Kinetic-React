@@ -19,6 +19,20 @@
     font-size: 15.5px;
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.banner-box>h4 {
+    font-size: 25px;
+}
+
+.banner-box>h2 {
+    font-size: 50px;
+}
+
+.banner-box>span {
+    font-size: 20px;
+    color: #616161;
 }
 
 .banner1 {

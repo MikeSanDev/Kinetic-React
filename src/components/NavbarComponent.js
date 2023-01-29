@@ -1,29 +1,40 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
+=======
+import React, { useRef } from 'react'
+import { FaBars, FaTimes } from "react-icons/fa";
+>>>>>>> origin/test-branch
 import './NavbarComponent.css';
 import logo from '../images/logo.png';
 
 const NavbarComponent = () => {
-    // mobile navbar toggle
-    const [isOpen, setIsOpen] = useState(false);
 
+    const navRef = useRef();
+
+    const showNavbar = () => {
+        navRef.current.classList.toggle("responsive_nav");
+    }
     return (
-        <>
+        <header>
             <div className='nav-main'>
-                <div className='nav-logo' >
+                <div className='nav-logo'>
                     {/* add href to landing page on logo */}
                     <img src={logo} alt="logo" className='logo' />
                     <a href='/landing' className='nav-title'>Kinetic Footwear</a>
                 </div>
-                <div className={`nav-items ${isOpen && "open"} `}>
+                <nav ref={navRef} className='nav-items'>
                     <a href="/">Home</a>
                     <a href="/about">About</a>
-                </div>
-                <div className={`nav-toggle ${isOpen && "open"} `}
-                    onClick={() => setIsOpen(!isOpen)}>
-                    <div className='bar'></div>
-                </div>
+
+                    <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+                        <FaTimes />
+                    </button>
+                </nav>
             </div>
-        </>
+            <button className="nav-btn" onClick={showNavbar}>
+                <FaBars />
+            </button>
+        </header>
     )
 }
 
