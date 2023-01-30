@@ -113,6 +113,8 @@ body {
   color: #eee;
 }
 
+
+
 /* RESPONSIVE */
 
 @media (min-width: 300px) and (max-width: 700px) {
@@ -140,5 +142,49 @@ body {
     margin-bottom: 5px;
   }
 
+
+}
+
+/* Concepts */
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.products>h1 {
+  color: #eee;
+  font-size: 50px;
+}
+
+.products>p {
+  color: #eee;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.all-cards {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: space-between;
+}
+
+.top>img {
+  width: 100%;
+}
+
+.bottom {
+  color: #eee;
+  padding-top: 25px;
+  font-size: 15px;
+}
+
+.all-cards>.card {
+  padding: 25px 25px;
 
 }
