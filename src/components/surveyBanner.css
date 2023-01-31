@@ -1,0 +1,70 @@
+#interest_form {
+    height: 80vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(/src/images/blob2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.interest_div a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+#interest_form p {
+    margin: 5px 0 30px 0px;
+    font-size: 21px;
+}
+
+#interest_form h1 {
+    margin-top: 80px;
+    font-size: 70px;
+}
+
+.interest_div a:hover {
+    background-color: #4d998f;
+    color: #fff;
+}
+
+.interest_div {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.survey_banner {
+    max-width: 100%;
+}
+
+/* Responsive */
+@media (min-width: 300px) and (max-width:413px) {
+    #interest_form h1 {
+        margin-top: 80px;
+        font-size: 60px;
+    }
+
+    #interest_form p {
+        margin: 5px 10px 30px 10px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 412px) and (max-width: 700px) {
+    #interest_form h1 {
+        margin-top: 80px;
+        font-size: 60px;
+    }
+
+    #interest_form p {
+        margin: 5px 10px 30px 10px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 700px) and (max-width:1200px) {}

@@ -77,7 +77,32 @@ button:hover {
 
 /* Responsive */
 
-@media (min-width: 300px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width:413px) {
+    #banner2 {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #banner2 .index_about {
+        width: 100%;
+        margin: 25px;
+        padding: 0px 25px;
+    }
+
+    #banner2 img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin: 30px 0 10px 0px;
+    }
+
+}
+
+@media (min-width: 414px) and (max-width: 700px) {
     #banner2 {
         height: auto;
         display: flex;
