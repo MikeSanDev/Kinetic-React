@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Banner1 from '../components/Banner1';
 import Banner2 from '../components/Banner2';
+import SurveyBanner from '../components/SurveyBanner';
 import detail from '../detail.js';
 
 const CreateCard = (props) => {
@@ -64,7 +65,8 @@ function Home() {
                     {detail.map(CreateCard)}
                 </div>
             </div>
-
+            <hr className='yellow-orange-hr' />
+            <SurveyBanner />
         </>
     )
 }

@@ -1,6 +1,9 @@
 /* banner 1 */
 #banner1 {
     background: url(/src/images/banner1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,9 +11,7 @@
     text-align: center;
     min-width: 100%;
     height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
     overflow-y: hidden;
 }
 

@@ -189,6 +189,12 @@ body {
 
 }
 
+.yellow-orange-hr {
+  background: linear-gradient(to right, #0be4d1, yellow);
+  height: 10px;
+
+}
+
 /* Responsive */
 @media (min-width: 300px) and (max-width:413px) {
   .card-img {

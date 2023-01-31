@@ -1,0 +1,40 @@
+#interest_form {
+    height: auto;
+    min-width: 100%;
+    height: auto;
+    background: url(/src/images/survey_star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.interest_div a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+#interest_form p {
+    margin: 10px 0 30px 0px;
+    font-size: 21px;
+}
+
+#interest_form h1 {
+    margin-top: 55px;
+    font-size: 70px;
+}
+
+.interest_div a:hover {
+    background-color: #4d998f;
+    color: #fff;
+}
+
+.interest_div {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.survey_banner {
+    max-width: 100%;
+}
