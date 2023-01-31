@@ -18,8 +18,6 @@ A recreated React version of my Kinetic Footwear project for a local start up. I
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/96930354/205545181-74e53180-e508-4815-8da2-2b0fd5820ff2.gif)</br>
 ### Shoe Concepts </br>
 ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/96930354/205545229-4ec23464-93c5-49f8-b80a-ee46a1a670b1.gif) </br>
-### Team Page </br>
-![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/96930354/205545895-44f214ed-7371-4b1a-9085-d26e430aef8c.gif)
 </br>
 ### Tech Page </br>
 ![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/96930354/205545569-d44736c3-6396-4e25-bbdd-dd5dce8cd3a4.gif)
