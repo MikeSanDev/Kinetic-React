@@ -188,3 +188,45 @@ body {
   padding: 25px 25px;
 
 }
+
+/* Responsive */
+@media (min-width: 300px) and (max-width:413px) {
+  .card-img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 412px) and (max-width: 700px) {
+
+  .all-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+
+  }
+}
+
+@media (min-width: 700px) and (max-width:1200px) {
+  .all-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+
+  }
+}

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Banner1 from '../components/Banner1';
 import Banner2 from '../components/Banner2';
 import detail from '../detail.js';
 
-const createCard = (props) => {
+const CreateCard = (props) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -19,6 +19,7 @@ const createCard = (props) => {
                     className="card-img"
                     src={isHovered ? props.hoverImage : props.image}
                     alt={props.name}
+                    style={{ width: "385px", height: "300px" }}
                 />
             </div>
             <div className="bottom">
@@ -60,7 +61,7 @@ function Home() {
                 <h1 className="title">Design Concepts</h1>
                 <p>Our theorized model and colorways</p>
                 <div className='all-cards'>
-                    {detail.map(createCard)}
+                    {detail.map(CreateCard)}
                 </div>
             </div>
 
