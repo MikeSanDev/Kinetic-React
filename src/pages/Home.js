@@ -67,6 +67,8 @@ function Home() {
             </div>
             <hr className='yellow-orange-hr' />
             <SurveyBanner />
+            <hr className='orange-yellow-hr' />
+
         </>
     )
 }

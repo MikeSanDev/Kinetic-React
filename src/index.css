@@ -195,11 +195,25 @@ body {
 
 }
 
+.orange-yellow-hr {
+  background: linear-gradient(to right, yellow, #0be4d1);
+  height: 10px;
+
+}
+
 /* Responsive */
 @media (min-width: 300px) and (max-width:413px) {
   .card-img {
-    width: 100px;
+    width: 300px !important;
+    height: 250px !important;
   }
+
+
+  .all-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media (min-width: 412px) and (max-width: 700px) {
@@ -224,6 +238,7 @@ body {
   .all-cards {
     display: flex;
     flex-direction: column;
+    ;
   }
 
   .products {
@@ -235,4 +250,5 @@ body {
     width: 100%;
 
   }
+
 }

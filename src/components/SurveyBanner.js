@@ -1,6 +1,5 @@
 import React from 'react'
 import './surveyBanner.css'
-import surveystar from '../images/survey_star.png'
 
 function SurveyBanner() {
   return (
