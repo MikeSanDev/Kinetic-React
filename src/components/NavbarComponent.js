@@ -16,10 +16,10 @@ const NavbarComponent = () => {
                 <div className='nav-logo'>
                     {/* add href to landing page on logo */}
                     <img src={logo} alt="logo" className='logo' />
-                    <a href='/landing' className='nav-title'>Kinetic Footwear</a>
+                    <a href='/' className='nav-title'>Kinetic Footwear</a>
                 </div>
                 <nav ref={navRef} className='nav-items'>
-                    <a href="/">Home</a>
+                    <a href="/Home">Home</a>
                     <a href="/about">About</a>
 
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>

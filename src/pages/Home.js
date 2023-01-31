@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import NavbarComponent from '../components/NavbarComponent';
 import Banner1 from '../components/Banner1';
 import Banner2 from '../components/Banner2';
 import SurveyBanner from '../components/SurveyBanner';
+import Footer from '../components/Footer';
 import detail from '../detail.js';
 
 const CreateCard = (props) => {
@@ -34,6 +36,7 @@ const CreateCard = (props) => {
 function Home() {
     return (
         <>
+            <NavbarComponent />
             <div id="hero">
                 <div className="hero-text">
                     <h1>Freedom of Energy For You.</h1>
@@ -68,7 +71,7 @@ function Home() {
             <hr className='yellow-orange-hr' />
             <SurveyBanner />
             <hr className='orange-yellow-hr' />
-
+            <Footer />
         </>
     )
 }
