@@ -68,9 +68,9 @@ function Home() {
                     {detail.map(CreateCard)}
                 </div>
             </div>
-            <hr className='yellow-orange-hr' />
+            <hr className='blue-yellow-hr' />
             <SurveyBanner />
-            <hr className='orange-yellow-hr' />
+            <hr className='yellow-blue-hr' />
             <Footer />
         </>
     )
