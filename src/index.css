@@ -19,23 +19,52 @@ body {
 .blue-yellow-hr {
   background: linear-gradient(to right, #0be4d1, yellow);
   height: 10px;
-
+  border: none;
 }
 
 .yellow-blue-hr {
   background: linear-gradient(to right, yellow, #0be4d1);
   height: 10px;
+  border: none;
 }
 
 .light-dark-hr {
   background: linear-gradient(to right, #d5ecfe, #34568b);
   height: 10px;
-
+  border: none;
 }
 
 .dark-light-hr {
   background: linear-gradient(to right, #34568b, #d5ecfe);
   height: 10px;
+  border: none;
+}
+
+.blue-bright {
+  background-image: linear-gradient(60deg,
+      #000000,
+      #00b2c2);
+  height: 10px;
+  border: none;
+}
+
+.bright-blue {
+  background-image: linear-gradient(60deg,
+      #00b2c2,
+      #000000);
+  height: 10px;
+  border: none;
+}
+
+.hero-hr {
+  background-image: linear-gradient(60deg,
+      hsl(0deg 100% 41%) 0%,
+      hsl(307deg 100% 36%) 23%,
+      hsl(197deg 100% 50%) 43%,
+      hsl(157deg 100% 65%) 62%,
+      hsl(64deg 100% 48%) 81%,
+      hsl(122deg 100% 50%) 100%);
+  height: 12px;
 
 }
 
@@ -70,16 +99,7 @@ body {
   align-items: center;
 }
 
-.hero-hr {
-  background-image: linear-gradient(60deg,
-      hsl(0deg 100% 41%) 0%,
-      hsl(307deg 100% 36%) 23%,
-      hsl(197deg 100% 50%) 43%,
-      hsl(157deg 100% 65%) 62%,
-      hsl(64deg 100% 48%) 81%,
-      hsl(122deg 100% 50%) 100%);
-  height: 12px;
-}
+
 
 .landing-container {
   overflow: hidden;
@@ -222,16 +242,7 @@ body {
   overflow-y: hidden;
 }
 
-.hero-hr {
-  background-image: linear-gradient(60deg,
-      hsl(0deg 100% 41%) 0%,
-      hsl(307deg 100% 36%) 23%,
-      hsl(197deg 100% 50%) 43%,
-      hsl(157deg 100% 65%) 62%,
-      hsl(64deg 100% 48%) 81%,
-      hsl(122deg 100% 50%) 100%);
-  height: 12px;
-}
+
 
 
 #hero h1 {
@@ -710,4 +721,68 @@ body {
     margin: 10px 125px 0px 125px;
 
   }
+}
+
+/* Survey */
+
+.survey-container {
+  color: #000000;
+  background-color: #eee;
+  background: url(/src/images/blobby.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 0 0 80px 0
+}
+
+.title {
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.form-main {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#input-box {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#area-box {
+  width: 100%;
+}
+
+.survey-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #444444;
+  background-color: #8cc0de;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transform: 0.2s;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  ;
+}
+
+.survey-btn:hover {
+  background-color: #444444;
+  color: #eee;
 }

@@ -55,6 +55,7 @@
             hsl(344deg 0% 93%) 91%,
             hsl(0deg 0% 100%) 100%);
     height: 12px;
+    border: none;
 }
 
 .bw_hr {
@@ -67,6 +68,8 @@
             hsl(0deg 0% 17%) 83%,
             hsl(0deg 0% 0%) 100%);
     height: 12px;
+    border: none;
+
 }
 
 .learn {

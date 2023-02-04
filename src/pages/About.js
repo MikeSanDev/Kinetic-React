@@ -9,7 +9,7 @@ function About() {
     return (
         <div>
             <NavbarComponent />
-            <hr class="light-dark-hr" />
+            <hr class="dark-light-hr" />
             <section class="about-main ">
                 <h1 class="tech_title">How It Works:</h1>
                 <div class="main_block">
@@ -50,7 +50,7 @@ function About() {
                     </div>
                 </div>
             </section>
-            <hr className='dark-light-hr' />
+            <hr className='light-dark-hr' />
             <Footer />
         </div>
     )
