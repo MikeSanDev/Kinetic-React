@@ -751,7 +751,7 @@ body {
   border-radius: 10px;
 }
 
-#input-box {
+.input-box {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -761,7 +761,7 @@ body {
   box-sizing: border-box;
 }
 
-#area-box {
+.area-box {
   width: 100%;
 }
 

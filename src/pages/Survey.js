@@ -34,7 +34,7 @@ function Survey() {
                 <Form className='form-main'>
                     <Form.Group className="form-control" >
                         <Form.Label>Email address:</Form.Label>
-                        <Form.Control id="input-box" type="email" placeholder="Enter email" required
+                        <Form.Control className="input-box" type="email" placeholder="Enter email" required
                             onChange={(e) => setEmail(e.target.value)} value={email} />
 
                         <Form.Text className="text-muted">
@@ -49,7 +49,7 @@ function Survey() {
                         <Form.Label column lg={2}>
                             What is your first impression of this product?
                         </Form.Label>
-                        <Form.Control id="input-box" type="text" placeholder="Normal text" required
+                        <Form.Control className="input-box" type="text" placeholder="Normal text" required
                             onChange={(e) => setQuestion1(e.target.value)} value={question1} />
                     </Form.Group>
                     <br />
@@ -58,7 +58,7 @@ function Survey() {
                         <Form.Label column lg={2}>
                             What features would you add?
                         </Form.Label>
-                        <Form.Control id="input-box" type="text" placeholder="Normal text" required
+                        <Form.Control className="input-box" type="text" placeholder="Normal text" required
                             onChange={(e) => setQuestion2(e.target.value)} value={question2} />
 
                     </Form.Group>
@@ -69,20 +69,11 @@ function Survey() {
                         <Form.Label as="legend" column sm={2}>
                             Is the product a good value for the price?
                         </Form.Label>
-                        <Col sm={10}>
-                            <Form.Check
-                                type="radio"
-                                label="Yes"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios1"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="No"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                        </Col>
+                        <Form.Select aria-label="Default select example">
+                            <option>                 </option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </Form.Select>
                     </Form.Group>
                     <br />
                     {/*  Question 4 */}
@@ -207,11 +198,12 @@ function Survey() {
                     <Form.Group className="form-control" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Any comments or suggestions?</Form.Label>
                         <br />
-                        <Form.Control id="area-box" as="textarea" rows={4}
+                        <Form.Control className="area-box" as="textarea" rows={4}
                             onChange={(e) => setQuestion7(e.target.value)} value={question7} />
+
                     </Form.Group>
                     <br />
-                    <Button className='survey-btn' type="submit">
+                    <Button className="survey-btn" type="submit">
                         Submit
                     </Button>
                 </Form>
