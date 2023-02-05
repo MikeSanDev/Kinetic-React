@@ -4,8 +4,7 @@ import Footer from '../components/Footer';
 import axios from 'axios'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 
 function Survey() {
@@ -13,12 +12,23 @@ function Survey() {
     // form states 
     const [email, setEmail] = useState('');
     const [question1, setQuestion1] = useState('');
-    const [question2, setQuestion2] = useState('');
+    const [age, setAge] = useState(0);
     const [question3, setQuestion3] = useState('');
     const [question4, setQuestion4] = useState('');
     const [question5, setQuestion5] = useState('');
     const [question6, setQuestion6] = useState('');
     const [question7, setQuestion7] = useState('');
+    const [question8, setQuestion8] = useState('');
+    const [question9, setQuestion9] = useState('');
+    const [question10, setQuestion10] = useState('');
+    const [question11, setQuestion11] = useState('');
+
+    // submit event 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(email, question1, age, question3, question4, question5,
+            question6, question7, question8, question9, question10, question11);
+    }
 
     return (
         <>
@@ -31,7 +41,8 @@ function Survey() {
 
 
                 {/* Form */}
-                <Form className='form-main'>
+                <Form autoComplete='off' className='form-main'
+                    onSubmit={handleSubmit}>
                     <Form.Group className="form-control" >
                         <Form.Label>Email address:</Form.Label>
                         <Form.Control className="input-box" type="email" placeholder="Enter email" required
@@ -46,160 +57,138 @@ function Survey() {
                     <br />
                     {/* Question 1 */}
                     <Form.Group className="form-control">
-                        <Form.Label column lg={2}>
-                            What is your first impression of this product?
+                        <Form.Label>
+                            What is your name and what do you do (occupation)?
                         </Form.Label>
-                        <Form.Control className="input-box" type="text" placeholder="Normal text" required
+                        <Form.Control className="input-box" type="text" required
                             onChange={(e) => setQuestion1(e.target.value)} value={question1} />
                     </Form.Group>
                     <br />
                     {/*  Question 2 */}
                     <Form.Group className="form-control">
-                        <Form.Label column lg={2}>
-                            What features would you add?
+                        <Form.Label>
+                            Age:
                         </Form.Label>
-                        <Form.Control className="input-box" type="text" placeholder="Normal text" required
-                            onChange={(e) => setQuestion2(e.target.value)} value={question2} />
-
+                        <Form.Control className="input-box" type="number" min={1} max={100} required
+                            onChange={(e) => setAge(e.target.value)} value={age} />
+                    </Form.Group>
+                    <br />
+                    {/*  Question 3 */}
+                    <Form.Group className="form-control">
+                        <Form.Label >
+                            Gender:
+                        </Form.Label>
+                        <br />
+                        <Form.Select className="input-box"
+                            onChange={(e) => setQuestion3(e.target.value)} value={question3}>
+                            <option></option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="2">I do not wish to self-identify</option>
+                        </Form.Select>
+                    </Form.Group>
+                    <br />
+                    {/*  Question 4 */}
+                    <Form.Group className="form-control">
+                        <Form.Label>
+                            What is your impression of our energy harvesting shoe?
+                        </Form.Label>
+                        <Form.Control className="input-box" type="text" required
+                            onChange={(e) => setQuestion4(e.target.value)} value={question4} />
                     </Form.Group>
                     <br />
 
-                    {/*  Question 3 */}
-                    <Form.Group as={Row} className="form-control">
-                        <Form.Label as="legend" column sm={2}>
-                            Is the product a good value for the price?
+                    {/*  Question 5 */}
+                    <Form.Group className="form-control">
+                        <Form.Label >
+                            How often do you engage in physical activities such as running, walking or hiking per day?
                         </Form.Label>
-                        <Form.Select aria-label="Default select example">
-                            <option>                 </option>
+                        <br />
+                        <Form.Select className="input-box"
+                            onChange={(e) => setQuestion5(e.target.value)} value={question5} >
+                            <option></option>
+                            <option value="1">0-1 hours</option>
+                            <option value="2">2-4 hours</option>
+                            <option value="2">4-6 hours</option>
+                            <option value="2">6+ hours</option>
+                        </Form.Select>
+                    </Form.Group>
+                    <br />
+
+                    {/*  Question 6 */}
+                    <Form.Group className="form-control">
+                        <Form.Label >
+                            How likely are you to buy this product?
+                        </Form.Label>
+                        <br />
+                        <Form.Select className="input-box"
+                            onChange={(e) => setQuestion6(e.target.value)} value={question6}>
+                            <option></option>
+                            <option value="1">Shut up and take my money</option>
+                            <option value="2">Likely</option>
+                            <option value="2">On The Fence</option>
+                            <option value="2">Not Convinced</option>
+                            <option value="2">Never</option>
+                        </Form.Select>
+                    </Form.Group>
+                    <br />
+
+                    {/*  Question 7 */}
+                    <Form.Group className="form-control">
+                        <Form.Label >
+                            Is this product a good value for the price ($200-300)?
+                        </Form.Label>
+                        <br />
+                        <Form.Select className="input-box"
+                            onChange={(e) => setQuestion7(e.target.value)} value={question7}>
+                            <option></option>
                             <option value="1">Yes</option>
                             <option value="2">No</option>
                         </Form.Select>
                     </Form.Group>
                     <br />
-                    {/*  Question 4 */}
-                    <Form.Group as={Row} className="form-control">
-                        <Form.Label as="legend" column sm={2}>
-                            How likely would you find this product useful?                        </Form.Label>
-                        <Col sm={10}>
-                            <Form.Check
-                                type="radio"
-                                label="Very Likely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios1"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Somewhat Likely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Neutral"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Somewhat Unlikely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Very Unlikely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                        </Col>
-                    </Form.Group>
-                    <br />
-
-                    {/*  Question 5 */}
-                    <Form.Group as={Row} className="form-control">
-                        <Form.Label as="legend" column sm={2}>
-                            If the product was available today, how likely would you be to buy it?
+                    {/* Question 8 */}
+                    <Form.Group className="form-control">
+                        <Form.Label className="sub-text">
+                            If not, what would be?
                         </Form.Label>
-                        <Col sm={10}>
-                            <Form.Check
-                                type="radio"
-                                label="Very Likely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios1"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Somewhat Likely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Neutral"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Somewhat Unlikely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Very Unlikely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                        </Col>
+                        <Form.Control className="input-box" type="text" required
+                            onChange={(e) => setQuestion8(e.target.value)} value={question8} />
                     </Form.Group>
                     <br />
 
-                    {/*  Question 6 */}
-                    <Form.Group as={Row} className="form-control">
-                        <Form.Label as="legend" column sm={2}>
-                            How likely are you to recommend this product to people you know?                        </Form.Label>
-                        <Col sm={10}>
-                            <Form.Check
-                                type="radio"
-                                label="Very Likely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios1"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Somewhat Likely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Neutral"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Somewhat Unlikely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                            <Form.Check
-                                type="radio"
-                                label="Very Unlikely"
-                                name="formHorizontalRadios"
-                                id="formHorizontalRadios2"
-                            />
-                        </Col>
-                    </Form.Group>
-                    <br />
-
-                    {/* Question 7 */}
-                    <Form.Group className="form-control" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Any comments or suggestions?</Form.Label>
+                    {/*  Question 9 */}
+                    <Form.Group className="form-control">
+                        <Form.Label >
+                            How likely are you to recommend this product to someone?
+                        </Form.Label>
                         <br />
-                        <Form.Control className="area-box" as="textarea" rows={4}
-                            onChange={(e) => setQuestion7(e.target.value)} value={question7} />
+                        <Form.Select className="input-box"
+                            onChange={(e) => setQuestion9(e.target.value)} value={question9}>
+                            <option></option>
+                            <option value="1">Very Likely</option>
+                            <option value="2">Likely</option>
+                            <option value="2">Not Likely</option>
+                            <option value="2">Never</option>
+                        </Form.Select>
+                    </Form.Group>
+                    <br />
+                    {/* Question 10 */}
+                    <Form.Group className="form-control">
+                        <Form.Label>
+                            What do you like about this product and what would you like to see it have?
+                        </Form.Label>
+                        <Form.Control className="input-box" type="text" required
+                            onChange={(e) => setQuestion10(e.target.value)} value={question10} />
+                    </Form.Group>
+                    <br />
+                    {/* Question 11 */}
+                    <Form.Group className="form-control" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Anything else you would like to share with us?
+                        </Form.Label>
+                        <br />
+                        <Form.Control className="area-box" as="textarea"
+                            onChange={(e) => setQuestion11(e.target.value)} value={question11} />
 
                     </Form.Group>
                     <br />
