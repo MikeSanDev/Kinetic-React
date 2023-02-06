@@ -70,7 +70,12 @@ function Survey() {
                             Age:
                         </Form.Label>
                         <Form.Control className="input-box" type="number" min={1} max={100} required
-                            onChange={(e) => setAge(e.target.value)} value={age} />
+                            onChange={(e) => {
+                                if (e.target.value <= 100) {
+                                    setAge(e.target.value);
+                                }
+                            }}
+                            value={age} />
                     </Form.Group>
                     <br />
                     {/*  Question 3 */}
