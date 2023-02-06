@@ -230,7 +230,7 @@ body {
 
 #hero {
   background: url(images/hero.png);
-  height: 98vh;
+  height: 85vh;
   width: 100%;
   background-size: cover;
   background-position: top 25% right 0;

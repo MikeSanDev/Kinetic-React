@@ -61,7 +61,7 @@ function Home() {
             <Banner1 />
             <Banner2 />
             <hr className="bw_hr" />
-            <div className='products'>
+            <div id="concepts" className='products'>
                 <h1 className="title">Design Concepts</h1>
                 <p>Our theorized model and colorways</p>
                 <div className='all-cards'>
