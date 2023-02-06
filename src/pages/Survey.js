@@ -13,12 +13,12 @@ function Survey() {
     const [email, setEmail] = useState('');
     const [question1, setQuestion1] = useState('');
     const [age, setAge] = useState('');
-    const [question3, setQuestion3] = useState('');
+    const [gender, setGender] = useState('');
     const [question4, setQuestion4] = useState('');
     const [question5, setQuestion5] = useState('');
     const [question6, setQuestion6] = useState('');
     const [question7, setQuestion7] = useState('');
-    const [question8, setQuestion8] = useState('');
+    const [question8, setQuestion8] = useState('$');
     const [question9, setQuestion9] = useState('');
     const [question10, setQuestion10] = useState('');
     const [question11, setQuestion11] = useState('');
@@ -26,8 +26,41 @@ function Survey() {
     // submit event 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(email, question1, age, question3, question4, question5,
-            question6, question7, question8, question9, question10, question11);
+        // console.log(email, question1, age, gender, question4, question5,
+        //     question6, question7, question8, question9, question10, question11);
+
+        const data = {
+            Email: email,
+            Name_Occupation: question1,
+            Age: age,
+            Gender: gender,
+            Impression: question4,
+            Daily_Activity: question5,
+            Likely_To_Buy: question6,
+            Value: question7,
+            Not_Value: question8,
+            Recommend: question9,
+            Improvements: question10,
+            Additional_Statements: question11
+        }
+        // Post to Sheet.Best API to connect with Google Sheets to post data onto a spreadsheet
+        axios.post('https://sheet.best/api/sheets/133376af-ea39-42b4-a8e4-24dd1584b5dd', data).then((response) => {
+            console.log(response);
+            // clears the fields after posting
+            setEmail('');
+            setAge('');
+            setGender('');
+            setQuestion1('');
+            setQuestion4('');
+            setQuestion5('');
+            setQuestion6('');
+            setQuestion7('');
+            setQuestion8('');
+            setQuestion9('');
+            setQuestion10('');
+            setQuestion11('');
+        });
+
     }
 
     return (
@@ -85,7 +118,7 @@ function Survey() {
                         </Form.Label>
                         <br />
                         <Form.Select className="input-box"
-                            onChange={(e) => setQuestion3(e.target.value)} value={question3}>
+                            onChange={(e) => setGender(e.target.value)} value={gender}>
                             <option></option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -155,13 +188,13 @@ function Survey() {
                     {/* Question 8 */}
                     {/* if statement allows this question to pop up only if question 7 is a no */}
                     {question7 === 'No' ? (
-                        <div className="form-control">
-                            <label className="sub-text">
+                        <Form.Group className="form-control">
+                            <Form.Label className="sub-text">
                                 If not, what would be?
-                            </label>
-                            <input className="input-box" type="text" required
+                            </Form.Label>
+                            <Form.Control className="input-box" type="text" required
                                 onChange={(e) => setQuestion8(e.target.value)} value={question8} />
-                        </div>
+                        </Form.Group>
                     ) : null}
                     <br />
 
