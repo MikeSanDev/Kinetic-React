@@ -11,7 +11,7 @@ function Banner1() {
                     <span>Shoes are a form of expression which we value highly in our design process.</span>
                     <span>Take a look at our design concepts!</span>
                     <br />
-                    <a href="#product1" className="learn">Explore More</a>
+                    <a href="#concepts" className="learn">Explore More</a>
                 </div>
 
             </div>
