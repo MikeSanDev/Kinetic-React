@@ -8,6 +8,7 @@ import SurveyBanner from '../components/SurveyBanner';
 import Footer from '../components/Footer';
 import detail from '../detail.js';
 
+
 const CreateCard = (props) => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -50,7 +51,7 @@ function Home() {
                 <Form className='call-action'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control className="email_form" type="email" placeholder="Your Email" />
-                        <Button className="normal" variant="primary" type="submit">
+                        <Button className="normal" type="submit">
                             Submit
                         </Button>
                     </Form.Group>
