@@ -7,6 +7,7 @@ import Banner2 from '../components/Banner2';
 import SurveyBanner from '../components/SurveyBanner';
 import Footer from '../components/Footer';
 import detail from '../detail.js';
+import axios from 'axios';
 
 
 const CreateCard = (props) => {
@@ -32,6 +33,7 @@ const CreateCard = (props) => {
         </div>
     );
 };
+
 
 
 function Home() {
