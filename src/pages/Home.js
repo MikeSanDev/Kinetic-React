@@ -51,7 +51,7 @@ function Home() {
                     </p>
                 </div>
                 <Form className='call-action'>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group controlId="formBasicEmail">
                         <Form.Control className="email_form" type="email" placeholder="Your Email" />
                         <Button className="normal" type="submit">
                             Submit
