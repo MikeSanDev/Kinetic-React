@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import axios from 'axios'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -22,6 +23,8 @@ function Survey() {
     const [question9, setQuestion9] = useState('');
     const [question10, setQuestion10] = useState('');
     const [question11, setQuestion11] = useState('');
+
+    const navigate = useNavigate();
 
     // submit event 
     const handleSubmit = (e) => {
@@ -46,6 +49,8 @@ function Survey() {
         // Post to Sheet.Best API to connect with Google Sheets to post data onto a spreadsheet
         axios.post('https://sheet.best/api/sheets/133376af-ea39-42b4-a8e4-24dd1584b5dd', data).then((response) => {
             console.log(response);
+            // redirect to home page after submitting the form
+            navigate('/Home');
             // clears the fields after posting
             setEmail('');
             setAge('');
