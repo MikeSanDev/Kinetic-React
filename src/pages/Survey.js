@@ -51,19 +51,6 @@ function Survey() {
             console.log(response);
             // redirect to home page after submitting the form
             navigate('/Home');
-            // clears the fields after posting
-            setEmail('');
-            setAge('');
-            setGender('');
-            setQuestion1('');
-            setQuestion4('');
-            setQuestion5('');
-            setQuestion6('');
-            setQuestion7('');
-            setQuestion8('');
-            setQuestion9('');
-            setQuestion10('');
-            setQuestion11('');
         });
 
     }
