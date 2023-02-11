@@ -8,8 +8,8 @@ function Banner1() {
                 <div className="banner-box">
                     <h4>New Arrival</h4>
                     <h2>Concept</h2>
-                    <span>Shoes are a form of expression which we value highly in our design process.</span>
-                    <span>Take a look at our design concepts!</span>
+                    <p>Shoes are a form of expression which we value highly in our design process.</p>
+                    <p>Take a look at our design concepts!</p>
                     <br />
                     <a href="#concepts" className="learn">Explore More</a>
                 </div>

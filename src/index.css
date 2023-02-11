@@ -83,7 +83,6 @@ body {
 /* Landing Page */
 
 #landing {
-
   height: 100vh;
   width: 100%;
   background: url(/src/images/kinetic.gif);
@@ -205,12 +204,70 @@ body {
   }
 }
 
+/* Responsive */
+@media (min-width: 300px) and (max-width:414px) {
+
+  /* Landing */
+  #landing {
+    height: 100vh;
+    width: auto;
+    background: url(/src/images/kinetic.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .landing-text h4 {
+    margin: 20px 30px;
+  }
 
 
 
+  #landing h1 {
+    font-size: 70px;
+  }
 
+}
 
+@media (min-width: 415px) and (max-width:700px) {
+  .landing-text h4 {
+    margin: 10px 50px;
+  }
+}
 
+@media (min-width: 700px) and (max-width:1200px) {
+
+  /* Landing */
+  #landing {
+    height: 100vh;
+    width: 100%;
+    background: url(/src/images/kinetic.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .landing-text h4 {
+    margin: 10px 50px;
+  }
+
+}
 
 
 
@@ -321,27 +378,6 @@ body {
 
 @media (min-width: 300px) and (max-width:413px) {
 
-  /* Landing */
-  #landing {
-    height: 100vh;
-    width: 100%;
-    background: url(/src/images/kinetic.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-
-  }
-
-  .landing-text h4 {
-    margin: 10px 30px;
-  }
 
   /* Hero */
   #hero h1 {
@@ -367,7 +403,9 @@ body {
     margin-bottom: 5px;
   }
 
-
+  #hero {
+    width: auto;
+  }
 }
 
 
@@ -442,29 +480,9 @@ body {
 
 
 
-@media (min-width: 412px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 700px) {
 
-  /* Landing */
-  #landing {
-    height: 100vh;
-    width: 100%;
-    background: url(/src/images/kinetic.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
 
-  }
-
-  .landing-text h4 {
-    margin: 20px 30px;
-  }
 
   .all-cards {
     display: flex;
@@ -484,27 +502,6 @@ body {
 
 @media (min-width: 700px) and (max-width:1200px) {
 
-  /* Landing */
-  #landing {
-    height: 100vh;
-    width: 100%;
-    background: url(/src/images/kinetic.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-
-  }
-
-  .landing-text h4 {
-    margin: 10px 50px;
-  }
 
   .all-cards {
     display: flex;

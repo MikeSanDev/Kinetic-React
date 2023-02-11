@@ -14,7 +14,7 @@
     overflow-y: hidden;
 }
 
-.banner-box span {
+.banner-box p {
     color: hsl(344deg 0% 46%) 30%;
     font-size: 15.5px;
     display: flex;
@@ -35,7 +35,7 @@
 
 }
 
-.banner-box>span {
+.banner-box>p {
     font-size: 20px;
     color: #eee;
 }
@@ -119,9 +119,10 @@
         overflow-y: hidden;
     }
 
-    .banner-box>span {
+    .banner-box>p {
         font-size: 20px;
         color: #eee;
+        padding: 0px 20px;
     }
 
     .banner-box {
