@@ -9,7 +9,7 @@ function Banner2() {
                 <img src={gif} alt="kinetic gift" />
             </div>
             <div class="index_about">
-                <span class="banner--emoji">🔋👟🧠</span>
+
                 <h1 class="about_title">The Problem</h1>
                 <p>The only solution if you want power on the go is a portable power bank. These are great for storing energy, but
                     they are bulky, and force you to charge them and carry them, cables and all if you ever want to use them. Our
