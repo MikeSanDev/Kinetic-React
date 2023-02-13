@@ -50,7 +50,7 @@ function Survey() {
         axios.post('https://sheet.best/api/sheets/133376af-ea39-42b4-a8e4-24dd1584b5dd', data).then((response) => {
             console.log(response);
             // redirect to home page after submitting the form
-            navigate('/Home');
+            navigate('/Thanks');
         });
 
     }
