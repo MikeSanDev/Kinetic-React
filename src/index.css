@@ -216,7 +216,7 @@ body {
     background-size: cover;
     background-position: center;
     padding: 0 80px;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -239,6 +239,23 @@ body {
 }
 
 @media (min-width: 415px) and (max-width:700px) {
+  #landing {
+    height: 100vh;
+    width: auto;
+    background: url(/src/images/kinetic.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 80px;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+  }
+
   .landing-text h4 {
     margin: 10px 50px;
   }
