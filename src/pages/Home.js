@@ -7,6 +7,7 @@ import Banner2 from '../components/Banner2';
 import SurveyBanner from '../components/SurveyBanner';
 import Footer from '../components/Footer';
 import detail from '../detail.js';
+import { motion } from 'framer-motion';
 
 
 const CreateCard = (props) => {
@@ -37,7 +38,18 @@ const CreateCard = (props) => {
 
 function Home() {
     return (
-        <>
+        <motion.div
+            transition={{
+                duration: 0.75
+            }}
+            initial={{
+                y: 10,
+                opacity: 0,
+            }}
+            animate={{
+                y: 0,
+                opacity: 1,
+            }}>
             <NavbarComponent />
             <div id="hero">
                 <div className="hero-text">
@@ -74,7 +86,7 @@ function Home() {
             <SurveyBanner />
             <hr className='yellow-blue-hr' />
             <Footer />
-        </>
+        </motion.div>
     )
 }
 

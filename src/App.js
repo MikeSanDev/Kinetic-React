@@ -1,23 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Landing from './pages/Landing';
-import Home from './pages/Home';
-import Survey from './pages/Survey';
-import About from './pages/About';
-import Thanks from './pages/Thanks';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import AnimatedRoutes from './components/AnimatedRoutes';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="Home" element={<Home />} />
-          <Route index element={<Landing />} />
-          <Route path="Survey" element={<Survey />} />
-          <Route path="Thanks" element={<Thanks />} />
-          <Route path="About" element={<About />} />
-        </Routes>
+        <AnimatedRoutes />
       </BrowserRouter>
     </div>
   );
