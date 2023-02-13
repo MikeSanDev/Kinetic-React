@@ -45,8 +45,8 @@ function Home() {
                 </div>
                 <div className="news-text">
                     <p>
-                        if you are interested, sign up to follow our journey and get
-                        <span>10% off</span> our first launch!
+                        If you are interested, sign up to follow our journey and get
+                        <span> 10% off</span> our first launch!
                     </p>
                 </div>
                 <Form className='call-action'>
