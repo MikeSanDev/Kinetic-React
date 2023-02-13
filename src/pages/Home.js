@@ -43,7 +43,7 @@ function Home() {
                 duration: 0.75
             }}
             initial={{
-                y: 10,
+                y: 0,
                 opacity: 0,
             }}
             animate={{
@@ -52,15 +52,37 @@ function Home() {
             }}>
             <NavbarComponent />
             <div id="hero">
-                <div className="hero-text">
+                <motion.div
+                    transition={{
+                        duration: 0.75
+                    }}
+                    initial={{
+                        x: 20,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        x: 0,
+                        opacity: 1,
+                    }} className="hero-text">
                     <h1>Freedom of Energy For You.</h1>
-                </div>
-                <div className="news-text">
+                </motion.div>
+                <motion.div
+                    transition={{
+                        delay: 0.5
+                    }}
+                    initial={{
+                        x: -30,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        x: 0,
+                        opacity: 1,
+                    }} className="news-text">
                     <p>
                         If you are interested, sign up to follow our journey and get
                         <span> 10% off</span> our first launch!
                     </p>
-                </div>
+                </motion.div>
                 <Form className='call-action'>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Control className="email_form" type="email" placeholder="Your Email" />
