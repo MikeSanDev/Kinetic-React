@@ -4,10 +4,14 @@ import Footer from '../components/Footer';
 import jumpLeft from '../images/jump_left.svg';
 import walkRight from '../images/walk_right.svg';
 import zombie from '../images/zombie_left.svg';
+import { motion } from 'framer-motion';
 
 function About() {
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}>
             <NavbarComponent />
             <hr class="dark-light-hr" />
             <section class="about-main ">
@@ -52,7 +56,7 @@ function About() {
             </section>
             <hr className='light-dark-hr' />
             <Footer />
-        </div>
+        </motion.div>
     )
 }
 

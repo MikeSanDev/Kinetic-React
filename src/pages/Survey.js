@@ -5,6 +5,7 @@ import axios from 'axios'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion'
 
 
 
@@ -56,7 +57,10 @@ function Survey() {
     }
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}>
             <NavbarComponent />
             <hr className="blue-bright" />
             <div className="survey-container">
@@ -233,7 +237,7 @@ function Survey() {
             <hr className="bright-blue" />
             <Footer />
 
-        </>
+        </motion.div>
     )
 }
 
