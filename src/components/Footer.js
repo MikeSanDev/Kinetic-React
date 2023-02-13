@@ -16,26 +16,26 @@ function Footer() {
                             <div className="icon">
                                 <div className='icon-group'>
                                     <FaFacebook className="fa-brands fa-facebook" />
-                                    <a > Facebook </a>
+                                    <h6 > Facebook </h6>
                                 </div>
                                 <div className='icon-group'>
                                     <FaTwitter className="fa-brands fa-twitter" />
-                                    <a > Twitter </a>
+                                    <h6 > Twitter </h6>
                                 </div>
                                 <div className='icon-group'>
                                     <FaInstagram className="fa-brands fa-instagram-square" />
-                                    <a > Instagram</a>
+                                    <h6 > Instagram</h6>
                                 </div>
                             </div>
                         </div>
                         <div className="col-2">
                             <h4>About</h4>
                             <a href="/About">About Us</a>
-                            <a >Contact Us</a>
+                            <h6 >Contact Us</h6>
                         </div>
                         <div className="col-3">
                             <h4>My Account</h4>
-                            <a >Help</a>
+                            <h6 >Help</h6>
                         </div>
                     </div>
                     <div className="call-action">

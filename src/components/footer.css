@@ -42,6 +42,11 @@ footer {
     margin-right: 20px;
 }
 
+.col-2 a {
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
 .col-3 {
     display: flex;
     flex-direction: column;
@@ -63,7 +68,7 @@ footer p {
     color: #eee;
 }
 
-footer a {
+footer h6 {
     font-size: 18px;
     text-decoration: none;
     color: #eee;
@@ -133,7 +138,7 @@ footer button:hover {
         font-size: 15px
     }
 
-    footer a {
+    footer h6 {
         font-size: 14px;
     }
 
@@ -160,7 +165,7 @@ footer button:hover {
         margin-bottom: 5px;
     }
 
-    .icon-group>a {
+    .icon-group>h6 {
         margin-bottom: 0;
         margin-left: 5px;
     }
@@ -186,7 +191,7 @@ footer button:hover {
         font-size: 15px
     }
 
-    footer a {
+    footer h6 {
         font-size: 14px;
     }
 
@@ -213,7 +218,7 @@ footer button:hover {
         margin-bottom: 5px;
     }
 
-    .icon-group>a {
+    .icon-group>h6 {
         margin-bottom: 0;
         margin-left: 5px;
     }
@@ -262,7 +267,7 @@ footer button:hover {
         font-size: 18px;
     }
 
-    footer a {
+    footer h6 {
         font-size: 15px;
     }
 }
