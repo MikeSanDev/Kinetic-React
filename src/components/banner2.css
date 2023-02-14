@@ -57,7 +57,7 @@
     font-weight: 600;
     padding: 13px 30px;
     color: #000;
-    background-color: rgb(255 205 46);
+    background-color: #ffd455;
     border-radius: 4px;
     cursor: pointer;
     border: none;
@@ -71,7 +71,7 @@
     color: #000;
 }
 
-button:hover {
+.normal:hover {
     background-color: #4d998f;
     color: #fff;
 }

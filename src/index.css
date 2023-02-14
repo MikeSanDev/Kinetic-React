@@ -40,6 +40,20 @@ body {
   border: none;
 }
 
+.thank-hr {
+  background: linear-gradient(60deg, #0066ff, #cb50e0, #ff6e80, #ffd455);
+  height: 10px;
+  border: none;
+}
+
+.you-hr {
+  background: linear-gradient(60deg, #ffd455, #ff6e80, #cb50e0, #0066ff);
+  height: 10px;
+  border: none;
+}
+
+
+
 .blue-bright {
   background-image: linear-gradient(60deg,
       #000000,
@@ -804,6 +818,7 @@ body {
 }
 
 .area-box {
+  padding: 10px;
   width: 100%;
   height: 100px;
 }
@@ -852,5 +867,64 @@ body {
     border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
+  }
+}
+
+/* Thank You Page */
+
+.thank-you {
+
+  background: url(/src/images/color-blob.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 83vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.thank-you>h1 {
+  padding-bottom: 20px;
+  color: #eee;
+  font-size: 60px;
+}
+
+.thanks-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 30px;
+  color: #000;
+  background-color: #ffd455;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transform: 0.2s;
+  text-decoration: none;
+  height: 45px;
+}
+
+.thanks-btn:hover {
+  background-color: #cb50e0;
+  color: #fff;
+}
+
+/* Responsive */
+@media (min-width: 300px) and (max-width:413px) {
+  .thank-you>h1 {
+    padding: 0 30px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 414px) and (max-width:700px) {
+  .thank-you>h1 {
+    padding: 0 30px;
+    padding-bottom: 20px;
   }
 }
