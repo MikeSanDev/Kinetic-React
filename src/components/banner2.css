@@ -123,7 +123,7 @@ button:hover {
         justify-content: center;
         align-items: center;
         width: 350px;
-        margin: 30px 0 10px 0px;
+        margin: 20px 0 20px 0px;
     }
 
 }
@@ -145,6 +145,6 @@ button:hover {
     }
 
     #banner2 img {
-        margin: 0px 20px;
+        margin: 0px 30px 20px;
     }
 }

@@ -44,6 +44,10 @@
     width: 100%;
 }
 
+.banner-desc {
+    margin-bottom: 20px;
+}
+
 .wb_hr {
     background-image: linear-gradient(270deg,
             hsl(0deg 0% 19%) 0%,
@@ -92,7 +96,7 @@
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .learn:hover {
@@ -128,6 +132,12 @@
     .banner-box {
         margin: 10px 40px;
     }
+
+    .learn {
+        margin-top: 30px;
+
+    }
+
 }
 
 @media (min-width: 700px) and (max-width:1200px) {
@@ -144,5 +154,9 @@
         background-size: cover;
         background-position: left;
         overflow-y: hidden;
+    }
+
+    .learn {
+        margin-top: 30px;
     }
 }

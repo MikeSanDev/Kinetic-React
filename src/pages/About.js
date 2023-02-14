@@ -13,14 +13,25 @@ function About() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}>
             <NavbarComponent />
-            <hr class="dark-light-hr" />
-            <section class="about-main ">
-                <h1 class="tech_title">How It Works:</h1>
-                <div class="main_block">
-                    <div class="tech_block tb1">
-                        <div class="tech_photo tech_pic1"><img src={zombie} alt="zombie" />
+            <hr className="dark-light-hr" />
+            <section className="about-main ">
+                <motion.h1
+                    transition={{
+                        duration: 0.75
+                    }}
+                    initial={{
+                        x: 20,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        x: 0,
+                        opacity: 1,
+                    }} className="tech_title">How It Works:</motion.h1>
+                <div className="main_block">
+                    <div className="tech_block tb1">
+                        <div className="tech_photo tech_pic1"><img src={zombie} alt="zombie" />
                         </div>
-                        <div class="tech_info">
+                        <div className="tech_info">
                             <h5>Walking is an everyday activity!</h5>
                             <p>When humans walk, they actually put a fair amount of energy into the surface of which they are
                                 moving on. After looking at many studies we found the range to be 50-67 Watts based on specific
@@ -28,21 +39,21 @@ function About() {
                                 but it is enough to be useful in our daily lives. </p>
                         </div>
                     </div>
-                    <div class="tech_block tb2">
-                        <div class="tech_info">
+                    <div className="tech_block tb2">
+                        <div className="tech_info">
                             <h5>Our product does just that.</h5>
                             <p> Although many people have tried making an energy harvesting shoe before (as demonstrated by the
                                 hundreds of patents on these types of devices) there isn’t a product like ours on the market!
                                 This isn’t because of manufacturing or market reasons, but simply because no one has <span><strong>gotten enough power.</strong></span>
                             </p>
                         </div>
-                        <div class="tech_photo tech_pic2"><img src={walkRight} alt="walking" />
+                        <div className="tech_photo tech_pic2"><img src={walkRight} alt="walking" />
                         </div>
                     </div>
-                    <div class="tech_block tb3">
-                        <div class="tech_photo tech_pic1"><img src={jumpLeft} alt="jumping" />
+                    <div className="tech_block tb3">
+                        <div className="tech_photo tech_pic1"><img src={jumpLeft} alt="jumping" />
                         </div>
-                        <div class="tech_info">
+                        <div className="tech_info">
                             <h5>Our energy harvesting system gets way more energy than anyone else has ever gotten before.</h5>
                             <p>
                                 Enough to make a product that can be useful! We are aiming to allow people to power their lives
@@ -54,7 +65,7 @@ function About() {
                     </div>
                 </div>
             </section>
-            <hr className='light-dark-hr' />
+            <hr classNameName='light-dark-hr' />
             <Footer />
         </motion.div>
     )
