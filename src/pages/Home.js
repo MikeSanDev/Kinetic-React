@@ -68,10 +68,10 @@ function Home() {
                 </motion.div>
                 <motion.div
                     transition={{
-                        delay: 0.5
+                        delay: 0.7
                     }}
                     initial={{
-                        x: -30,
+                        x: 30,
                         opacity: 0,
                     }}
                     animate={{
