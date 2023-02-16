@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import NavbarComponent from '../components/NavbarComponent';
 import Banner1 from '../components/Banner1';
 import Banner2 from '../components/Banner2';
@@ -40,7 +38,7 @@ function Home() {
     return (
         <motion.div
             transition={{
-                duration: 0.75
+                duration: 1.50
             }}
             initial={{
                 y: 0,
