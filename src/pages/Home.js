@@ -83,15 +83,12 @@ function Home() {
                         <span> 10% off</span> our first launch!
                     </p>
                 </motion.div>
-                <Form className='call-action'>
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Control className="email_form" type="email" placeholder="Your Email" />
-                        <Button className="normal" type="submit">
-                            Submit
-                        </Button>
-                    </Form.Group>
+                <form action="https://formsubmit.co/njohn@hawk.iit.edu" method="POST" className='call-action'>
+                    <input className="email_form" type="email" placeholder="Your Email" name="email" required />
+                    <input type="hidden" name="_next" value="/Thanks"></input>
+                    <button className="normal" type="submit">Subscribe</button>
+                </form>
 
-                </Form>
             </div>
             <hr className="hero-hr" />
             <Banner1 />
