@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import NavbarComponent from '../components/NavbarComponent';
 import Banner1 from '../components/Banner1';
 import Banner2 from '../components/Banner2';
@@ -85,7 +83,7 @@ function Home() {
                 </motion.div>
                 <form action="https://formsubmit.co/njohn@hawk.iit.edu" method="POST" className='call-action'>
                     <input className="email_form" type="email" placeholder="Your Email" name="email" required />
-                    <input type="hidden" name="_next" value="/Thanks"></input>
+                    <input type="hidden" name="_next" value="https://kineticfootwear.org/NewSub"></input>
                     <button className="normal" type="submit">Subscribe</button>
                 </form>
 
