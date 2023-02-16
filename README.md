@@ -9,6 +9,7 @@ A recreated React version of my Kinetic Footwear project for a local start up. I
 * React
 * HTML/CSS
 * Javascript
+* Framer Motion
 * React-Bootstrap
 
 ### Landing Page  </br>
