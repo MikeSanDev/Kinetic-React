@@ -42,11 +42,10 @@ function Footer() {
                         <p className="news-text">
                             Stay updated on our journey!
                         </p>
-                        <form action="https://formsubmit.co/mjs070594@gmail.com" method="POST">
-                            <input className="email_form" name="email" type="email" placeholder="Your email address" required />
-                            <input type="hidden" name="_subject" value="" />
-                            <input type="hidden" name="_next" value="" />
-                            <button className="normal">Sign Up</button>
+                        <form action="https://formsubmit.co/njohn@hawk.iit.edu" method="POST" className='call-action'>
+                            <input className="email_form" type="email" placeholder="Your Email" name="email" required />
+                            <input type="hidden" name="_next" value="/Thanks"></input>
+                            <button className="normal" type="submit">Subscribe</button>
                         </form>
                     </div>
                 </div>
