@@ -62,7 +62,7 @@ function Home() {
                         x: 0,
                         opacity: 1,
                     }} className="hero-text">
-                    <h1>Freedom of Energy For You.</h1>
+                    <h1>Energy at your feet, power in your pocket.</h1>
                 </motion.div>
                 <motion.div
                     transition={{
@@ -77,8 +77,7 @@ function Home() {
                         opacity: 1,
                     }} className="news-text">
                     <p>
-                        If you are interested, sign up to follow our journey and get
-                        <span> 10% off</span> our first launch!
+                        If you are interested, sign up to follow our journey!
                     </p>
                 </motion.div>
                 <form action="https://formsubmit.co/njohn@hawk.iit.edu" method="POST" className='call-action'>
