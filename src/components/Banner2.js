@@ -10,11 +10,10 @@ function Banner2() {
             </div>
             <div class="index_about">
 
-                <h1 class="about_title">The Problem</h1>
-                <p>The only solution if you want power on the go is a portable power bank. These are great for storing energy, but
-                    they are bulky, and force you to charge them and carry them, cables and all if you ever want to use them. Our
-                    product solves all issues power banks have, all in the palm of your…feet. </p>
-                <p>All you have to do is walk!</p>
+                <h1 class="about-title">Giving portable power a new meaning
+                </h1>
+                <p>Looking for a way to stay connected on the go? In today's world, staying connected is more important than ever, and that's where Kinetic footwear comes in. We understand the importance of reliable connectivity and are proud to offer a solution.With our energy harvesting shoe, you can generate electricity with every step you take.
+                    <br /><br /> This means you'll never have to worry about running out of battery life on your mobile devices, even when you're out and about. Plus, with no need for cables or external chargers, our energy harvesting shoe is the most convenient way to keep your devices charged on the go.</p>
                 <button class="normal"><a class="learn-text" href="/about">Learn More</a></button>
             </div>
 

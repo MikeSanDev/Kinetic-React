@@ -9,7 +9,7 @@ function Banner1() {
                     <h4>New Arrival</h4>
                     <h2>Concept</h2>
                     <p>Shoes are a form of expression which we value highly in our design process.</p>
-                    <p className='banner'>Take a look at our design concepts!</p>
+                    <p className='banner-desc'>Take a look at our design concepts!</p>
                     <br />
                     <a href="#concepts" className="learn">Explore More</a>
                 </div>
