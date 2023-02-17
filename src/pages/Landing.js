@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 function Landing() {
     return (
@@ -11,7 +11,7 @@ function Landing() {
                 <div className="landing-container">
                     <div className="landing-text">
                         <h1>Kinetic Footwear</h1>
-                        <h4>Freedom of Energy for you.</h4>
+                        <h4>Energy at your feet, power in your pocket.</h4>
                         <a href="/Home"><button className="normal">Home</button></a>
                     </div>
                 </div>
