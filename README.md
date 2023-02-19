@@ -13,16 +13,16 @@ A recreated React version of my Kinetic Footwear project for a local start up. I
 * React-Bootstrap
 
 ### Landing Page  </br>
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/96930354/205545082-2c2a945a-76cc-47d2-bdc5-a6fa1352f4bf.gif)
+![landing_gif](https://user-images.githubusercontent.com/96930354/219909897-df861501-fe98-44dc-9a10-0cc0c7018f40.gif)
 </br>
 ### Home Page </br>
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/96930354/205545181-74e53180-e508-4815-8da2-2b0fd5820ff2.gif)</br>
-### Shoe Concepts </br>
-![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/96930354/205545229-4ec23464-93c5-49f8-b80a-ee46a1a670b1.gif) </br>
+![home_gif](https://user-images.githubusercontent.com/96930354/219909948-3648bd5f-8487-43c4-9f94-9f88d5f8b6cf.gif)
 </br>
-### Tech Page </br>
-![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/96930354/205545569-d44736c3-6396-4e25-bbdd-dd5dce8cd3a4.gif)
-
+### Shoe Concepts </br>
+![concept_gif](https://user-images.githubusercontent.com/96930354/219910279-48eaf31f-d7ff-4ff1-92d9-7ac2a64b98a3.gif)
+</br>
+### About Page </br>
+![about](https://user-images.githubusercontent.com/96930354/219910323-26bf18a3-be0b-46b3-aadb-867394cb7d40.gif)
 
 
 # Getting Started with Create React App
