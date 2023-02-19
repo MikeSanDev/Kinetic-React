@@ -22,7 +22,9 @@ const NavbarComponent = () => {
                 </div>
                 <nav ref={navRef} className='nav-items'>
                     <a href="/Home">Home</a>
-                    <a href="/about">About</a>
+                    <a href="/About">About</a>
+                    <a href="/Survey">Survey</a>
+                    <a href="#concepts">Concepts</a>
 
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes />

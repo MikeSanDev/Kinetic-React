@@ -81,7 +81,7 @@ function About() {
                     </div>
                 </motion.div>
             </section>
-            <hr classNameName='light-dark-hr' />
+            <hr className='light-dark-hr' />
             <Footer />
         </motion.div>
     )
