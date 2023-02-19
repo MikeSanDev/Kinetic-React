@@ -97,15 +97,27 @@ body {
 
 /* Landing Page */
 
-#landing .landing_vid {
+#landing {
   height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
+  overflow: hidden;
+
 }
 
+.landing_vid {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 80px;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 
 .landing-container {
   overflow: hidden;
@@ -223,7 +235,6 @@ body {
   #landing {
     height: 100vh;
     width: auto;
-    background: url(/src/images/kinetic.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -254,7 +265,6 @@ body {
   #landing {
     height: 100vh;
     width: auto;
-    background: url(/src/images/kinetic.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -284,7 +294,6 @@ body {
   #landing {
     height: 100vh;
     width: 100%;
-    background: url(/src/images/kinetic.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

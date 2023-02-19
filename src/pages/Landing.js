@@ -9,7 +9,7 @@ function Landing() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}>
             <div id="landing">
-                <video className="landing_vid" autoPlay loop muted cover>
+                <video className="landing_vid" autoPlay loop muted >
                     <source src={landing_vid} type="video/mp4" />
                 </video>
                 <div className="landing-container">
