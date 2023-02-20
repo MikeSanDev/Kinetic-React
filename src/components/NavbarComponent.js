@@ -25,7 +25,6 @@ const NavbarComponent = () => {
                     <a href="/About">About</a>
                     <a href="/Survey">Survey</a>
                     <a href="#concepts">Concepts</a>
-
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes />
                     </button>
