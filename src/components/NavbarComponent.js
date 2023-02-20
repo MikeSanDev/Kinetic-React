@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import './NavbarComponent.css';
 import logo from '../images/logo.png';
+import { Link } from 'react-router-dom'
 
 const NavbarComponent = () => {
 
@@ -24,7 +25,7 @@ const NavbarComponent = () => {
                     <a href="/Home">Home</a>
                     <a href="/About">About</a>
                     <a href="/Survey">Survey</a>
-                    <a href="#concepts">Concepts</a>
+                    <Link to="/Home/#concepts">Concepts</Link>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes />
                     </button>
