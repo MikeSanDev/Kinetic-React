@@ -166,12 +166,11 @@ footer button:hover {
 
     .call-action input {
         margin-bottom: 8px;
-        width: 15rem;
+        width: 12rem;
         border-radius: 4px;
     }
 
-
-    .foot-icon {
+    .fa-brands {
         display: none;
     }
 
@@ -183,7 +182,6 @@ footer button:hover {
 
     .icon-group {
         display: flex;
-        align-items: center;
         margin-bottom: 5px;
     }
 
@@ -204,6 +202,15 @@ footer button:hover {
         justify-content: space-evenly;
         flex-direction: column;
 
+    }
+
+    .col-2 {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .col-1 {
+        margin: 0 20px;
     }
 
 }
@@ -224,9 +231,6 @@ footer button:hover {
     }
 
 
-    .foot-icon {
-        display: none;
-    }
 
     .main-col {
         padding: 50px 30px;
@@ -236,7 +240,6 @@ footer button:hover {
 
     .icon-group {
         display: flex;
-        align-items: center;
         margin-bottom: 5px;
     }
 
@@ -258,9 +261,18 @@ footer button:hover {
         flex-direction: column;
 
     }
+
+    .col-2 {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .col-1 {
+        margin: 0 20px;
+    }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width:1200px) {
     .icon {
         display: flex;
         flex-direction: row;
@@ -291,5 +303,9 @@ footer button:hover {
 
     footer h6 {
         font-size: 15px;
+    }
+
+    .normal {
+        margin-top: 10px;
     }
 }
