@@ -607,7 +607,8 @@ body {
   background-size: cover;
   background-position: center;
   height: auto;
-  padding: 80px 0
+  padding: 80px 0;
+
 }
 
 .tech_title {
@@ -638,6 +639,7 @@ body {
 .tech_info {
   text-align: center;
   margin: 0px 25px;
+
 }
 
 .tech_info h5 {
@@ -680,7 +682,7 @@ body {
 
   .main_block {
     margin: 30px 40px 0 40px;
-
+    z-index: -22;
   }
 
   .tech_info h5 {
@@ -800,7 +802,8 @@ body {
   background-size: cover;
   background-position: center;
   height: auto;
-  padding: 0 0 80px 0
+  padding: 0 0 80px 0;
+
 }
 
 .title {
