@@ -62,7 +62,7 @@ function Home() {
                         x: 0,
                         opacity: 1,
                     }} className="hero-text">
-                    <h1><span>Energy</span> at your feet, power in your pocket.</h1>
+                    <h1><span className='span-gradient1'>Energy</span> at your feet, <span className='span-gradient2'>Power</span> in your pocket.</h1>
                 </motion.div>
                 <motion.div
                     transition={{
