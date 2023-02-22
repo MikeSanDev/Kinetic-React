@@ -62,7 +62,7 @@ function Home() {
                         x: 0,
                         opacity: 1,
                     }} className="hero-text">
-                    <h1>Energy at your feet, power in your pocket.</h1>
+                    <h1><span>Energy</span> at your feet, power in your pocket.</h1>
                 </motion.div>
                 <motion.div
                     transition={{

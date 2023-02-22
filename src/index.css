@@ -377,7 +377,17 @@ body {
 
 #hero .hero-text {
   margin-bottom: 18px;
+
+
 }
+
+#hero .hero-text h1>span {
+  background: linear-gradient(to right, #00C9FF,
+      #92FE9D, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 
 #hero .news-text {
   margin-bottom: 20px;
