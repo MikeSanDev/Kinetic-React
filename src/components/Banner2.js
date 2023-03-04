@@ -1,6 +1,6 @@
 import React from 'react'
 import './banner2.css'
-import gif from '../images/kinetic.gif'
+import gif from '../images/landing.mp4'
 
 function Banner2() {
     return (
