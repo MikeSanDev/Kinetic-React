@@ -23,7 +23,7 @@
 
 }
 
-#banner2 img {
+#banner2 video{
     width: 500px;
     border-radius: 20px;
     margin-left: 50px;
@@ -121,7 +121,7 @@
         padding: 0px 25px;
     }
 
-    #banner2 img {
+    #banner2 video {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -147,7 +147,7 @@
         width: auto;
     }
 
-    #banner2 img {
+    #banner2 video {
         margin: 0px 30px 20px;
     }
 }

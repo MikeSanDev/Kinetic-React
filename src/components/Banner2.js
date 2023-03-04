@@ -1,12 +1,14 @@
 import React from 'react'
 import './banner2.css'
-import gif from '../images/landing.mp4'
+import copy from '../images/landing.mp4'
 
 function Banner2() {
     return (
         <div id="banner2">
             <div class="idx_about_gif">
-                <img src={gif} alt="kinetic gift" />
+            <video className="idx_about_vid" autoPlay loop muted >
+                    <source src={copy} type="video/mp4" />
+                </video>
             </div>
             <div class="index_about">
 
