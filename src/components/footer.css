@@ -57,7 +57,10 @@ footer {
     text-decoration: none;
 }
 
-
+.ig_footer {
+    display: flex;
+    align-items: baseline;
+}
 
 footer h4 {
     font-size: 18px;
@@ -110,7 +113,10 @@ footer span {
     margin-bottom: 20px;
 }
 
-
+.footer-group1 {
+    display: flex;
+    align-items: baseline;
+}
 footer input {
     height: 2.58rem;
     padding: 0 1.25rem;
@@ -291,6 +297,7 @@ footer button:hover {
 
     .fa-brands {
         margin-right: 5px;
+    
     }
 
     .col-1 h4 {

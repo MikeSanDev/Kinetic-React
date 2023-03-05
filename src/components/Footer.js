@@ -23,11 +23,10 @@ function Footer() {
                                     <h6 > Twitter </h6>
                                 </div> */}
                                 <div className='icon-group'>
-
-                                    <a href='https://www.instagram.com/kineticfootwear_/' target="_blank" rel="noreferrer"> Instagram
+                                    <div className='footer-group1'>
+                                    <a href='https://www.instagram.com/kineticfootwear_/' target="_blank" rel="noreferrer" className='ig_footer'> Instagram
                                         <FaInstagram className="fa-brands fa-instagram-square" />
-                                    </a>
-
+                                    </a> </div>
                                     <a href="/About">About Us</a>
                                 </div>
                             </div>
