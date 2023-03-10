@@ -23,7 +23,7 @@ const detail = [
     },
     {
         id: 3,
-        name: 'Kin 312 "Volt"',
+        name: 'Kin 312 "Ro"',
         image: yellow1,
         hoverImage: yellow2,
         isHovered: false
