@@ -1,4 +1,4 @@
-# Kinetic Footwear (React Version) (in progress)
+# Kinetic Footwear (React Version)
 
 A recreated React version of my Kinetic Footwear project for a local start up. I prefer working with React and I am currently working on recreating and improving the previous Python version. 
 
