@@ -10,6 +10,12 @@ header nav {
     padding: 20px
 }
 
+header .nav-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
 .nav-main {
     height: 60px;
     display: flex;
