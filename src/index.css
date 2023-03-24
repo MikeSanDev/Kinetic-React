@@ -632,7 +632,8 @@ body {
   text-align: center;
   color: #34568b;
   font-size: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  padding-top: 40px
 }
 
 .main_block {
