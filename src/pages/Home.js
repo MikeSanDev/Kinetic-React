@@ -101,6 +101,7 @@ function Home() {
             <hr className='blue-yellow-hr' />
             <SurveyBanner />
             <hr className='yellow-blue-hr' />
+            
             <Footer />
         </motion.div>
     )

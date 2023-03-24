@@ -67,7 +67,7 @@ function Survey() {
                 <br></br>
                 <h1 className='title'>Survey</h1>
                 <br></br>
-
+                <h2 className='sub_title'>Save 10% off our first release by taking the survey!</h2>
 
                 {/* Form */}
                 <Form autoComplete='off' className='form-main'
