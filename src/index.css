@@ -829,6 +829,12 @@ body {
   text-align: center;
   font-size: 40px;
 }
+.sub_title{
+
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+}
 
 .form-main {
   background-color: #fff;

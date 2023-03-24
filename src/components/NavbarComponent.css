@@ -9,12 +9,12 @@ header nav {
     justify-content: space-between;
     padding: 20px
 }
-
-/* header .nav-main {
+header {
     position: fixed;
     top: 0;
     width: 100%;
-  } */
+  }
+
 
 .nav-main {
     height: 60px;
@@ -140,6 +140,8 @@ header nav {
         padding-top: 0;
     }
 
+
+
     /* HERO MEDIA QUERY */
     #hero {
         width: 100%;
@@ -182,3 +184,4 @@ header nav {
         margin-top: 0px;
     }
 }
+
