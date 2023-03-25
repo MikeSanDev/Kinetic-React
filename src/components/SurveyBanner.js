@@ -9,7 +9,6 @@ function SurveyBanner() {
           <h1>Interest Survey</h1>
           <p>We want to know you!
             <br />
-
             Save 10% off our first release by taking the survey!</p>
           <a className="normal" href="/Survey" >Take The Survey</a>
         </div>
