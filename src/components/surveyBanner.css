@@ -17,15 +17,25 @@
 
 }
 
-#interest_form p {
-    margin: 5px 0 30px 0px;
+.p_1 {
+   padding-top: 5px 0 5px 0;
     font-size: 21px;
+    
+}
+.p_2{
+    padding-bottom: 20px;
+    font-size: 21px;
+}
+#interest_form p{
+    margin-bottom: 0;
 }
 
 #interest_form h1 {
     margin-top: 80px;
     font-size: 70px;
 }
+
+
 
 .interest_div a:hover {
     background-color: #4d998f;
@@ -49,10 +59,15 @@
         font-size: 60px;
     }
 
-    #interest_form p {
-        margin: 5px 10px 30px 10px;
-        font-size: 18px;
-    }
+    .p_1 {
+        padding-top: 5px 0 5px 0;
+         font-size: 21px;
+         
+     }
+     .p_2{
+         padding-bottom: 20px;
+         font-size: 21px;
+     }
 }
 
 @media (min-width: 412px) and (max-width: 700px) {
@@ -60,11 +75,15 @@
         margin-top: 80px;
         font-size: 60px;
     }
-
-    #interest_form p {
-        margin: 5px 10px 30px 10px;
-        font-size: 18px;
-    }
+    .p_1 {
+        padding-top: 5px 0 5px 0;
+         font-size: 21px;
+         
+     }
+     .p_2{
+         padding-bottom: 20px;
+         font-size: 21px;
+     }
 }
 
 @media (min-width: 700px) and (max-width:1200px) {}
