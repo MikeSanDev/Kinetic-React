@@ -1,6 +1,6 @@
-# Kinetic Footwear (React Version)
+# Kinetic Footwear (React V2)
 
-A recreated React version of my Kinetic Footwear project for a local start up. I prefer working with React and I am currently working on recreating and improving the previous Python version. 
+I recreated a React version of my Kinetic Footwear project for a local start up. I prefer working with React and I am currently working on recreating and improving the previous Python version. 
 
 "A test e-commerce site for a startup company that sells a usb/charge-able sneaker with every step
 -currently a concept site to show investors. A survey was implemented in order to get quantifiable data to show an interest for this product."
