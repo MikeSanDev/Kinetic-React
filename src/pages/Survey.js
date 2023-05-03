@@ -47,7 +47,6 @@ function Survey() {
             Improvements: question10,
             Additional_Statements: question11
         }
-        // Post to Sheet.Best API to connect with Google Sheets to post data onto a spreadsheet
         axios.post('https://sheet.best/api/sheets/133376af-ea39-42b4-a8e4-24dd1584b5dd', data).then((response) => {
             console.log(response);
             // redirect to home page after submitting the form
@@ -68,7 +67,6 @@ function Survey() {
                 <h1 className='title'>Survey</h1>
                 <br></br>
                 <h2 className='sub_title'>Save 10% off our first release by taking the survey!</h2>
-
                 {/* Form */}
                 <Form autoComplete='off' className='form-main'
                     onSubmit={handleSubmit}>
